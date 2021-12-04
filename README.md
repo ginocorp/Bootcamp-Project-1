@@ -1,4 +1,5 @@
 Github: https://github.com/ginocorp/project-one-spotify-new-music-generator
+
 Github Pages domain: https://ginocorp.github.io/project-one-spotify-new-music-generator/
 
 User Story:
