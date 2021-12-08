@@ -4,15 +4,97 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css">
-    <title>Sandbox</title>
+    <title>Spotify New Music New Hotness</title>
 </head>
 <body>
+        <header class="jumbotron bg-dark row text-light ">
+
+
+         <nav class="navbar navbar-light bg-light container-fluid row">
+            <div class="container-fluid row">
+              <a class="navbar-brand" href="#">
+                <img src="./assets/spotify.jpg" alt="" width="auto" height="150" class="d-inline-block align-text-top">
+                Spotify New Music Generator
+              </a>
+            </div>
+          </nav>
+        
+        <!-- <div class="row">
+            <div class="col-4"><img src="./assets/spotify.jpg" class="img-fluid" id="logo"></div>
+            <div class="col-8">Spotify New Music Generator</div>
+          </div> -->
+          <!-- <div>
+            <h1 class="display-3">Spotify New Music Generator</h1>
+            <p class="lead">Find New Music and Sort By Your Favorite Genre!</p>
+        </div> -->
+      </header>
+
+
+    
     <div class="container">
         <div class="border"></div>
-        <div class="main-element"></div>
-        <div id="card1"></div>
-      </div>
+        <div class="main-element">
+            
+          <h1>New music Generator</h1>
+          <div class="row time-block">
+            <div class="col-md-1 hour">Music Notes</div>
+            <input class="col-md-10 " placeholder="Search for Music">
+            <button class="btn saveBtn col-md-1"></button>
+        </div>
+          <div class="row align-items-end p-4">
+
+            <div class="btn-group-vertical bg-success my-5 col-12 col-md-3 col-xl-3" role="group" aria-label="Basic outlined example">
+                <a href="#" class="btn btn btn-lg disabled" tabindex="-1" role="button" aria-disabled="true">Get New Music</a>
+                <br>
+                <a href="#" class="btn btn btn-lg disabled" tabindex="-1" role="button" aria-disabled="true">Date Range</a>
+                <br>
+                <a href="#" class="btn btn btn-lg disabled" tabindex="-1" role="button" aria-disabled="true">Music Genre</a>
+            </div>
+            
+            <div class="col-md-1 col-xl-1"> </div>
+            
+            <table class="table table-success my-5 table-hover col-12 col-md-8 col-xl-8 bg-success text-light ">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Artist</th>
+                    <th scope="col">Song</th>
+                    <th scope="col">Album</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td colspan="2">Larry the Bird</td>
+                    <td>@twitter</td>
+                  </tr>
+                </tbody>
+            </table>
+
+          </div>  
+            
+            
+      
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
 </body>
 </html>

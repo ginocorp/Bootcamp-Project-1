@@ -5,6 +5,12 @@ body {
     align-content: center;
   }
   
+  #logo {
+    width: 200px;
+    margin: 50px;
+    border-radius: 50%;
+  }
+
   .container {
     padding-top: 50px;
     width: 700px;
@@ -13,6 +19,7 @@ body {
     position: relative;
     overflow: hidden;
   }
+  
   
   .main-element {
     position: absolute;
@@ -51,3 +58,5 @@ body {
         background-position: 200% center;
       }
     }
+
+/* Image Source for Logo https://unsplash.com/photos/JlO3-oY5ZlQ */
