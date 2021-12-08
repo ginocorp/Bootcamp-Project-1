@@ -11,6 +11,13 @@ body {
     border-radius: 50%;
   }
 
+  .header {
+    overflow: hidden;
+    background-color:black;
+    padding: 20px 10px;
+    font-size:large;
+  }
+
   .container {
     padding-top: 50px;
     width: 700px;
@@ -33,7 +40,7 @@ body {
     background: rgb(31, 26, 26);
     z-index: 1;
   }
-  
+
   .border {
     position: absolute;
     display: block;
