@@ -10,20 +10,17 @@
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css">
-  <title>Spotify New Music Hotness</title>
-  <!-- <link rel="shortcut icon" href="assets/flavicon.ico"> -->
-  <link href="data:image/x-icon;base64,AAABAAEAEBAAAAAAAABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFw1IgB3RXkAeki6AH9N5QCEUuYAWy28AB4HfgAbDCYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACQJeABOHu8Ammf/AJ1q/wCeaf8AmGT/AD8I/wAxAP8AJQDyAFAlewBkMAEAAAAAAAAAAAAAAAAAAAAAAC4LmwA2AP8APQD/AEQE/wBrL/8AZir/ADsA/wA4AP8ANAD/AGAl/wCTW/8Acj+eAGEtAgAAAAAAAAAAAHdKcQCEUf8AVhn/AD8A/wA7AP8AOQD/ADkA/wA8AP8ASAv/AHU8/wCmb/8ApWz/AJdf/wBtOXkAAAAAAGk/HACSZPEAr4L/AKp9/wCQXf8AeEH/AHA2/wB0PP8AhlD/AKJu/wCtev8Ao23/AKRs/wCka/8AjVb0AGMwIgV7UXUAqXv/AKt+/wCpff8AqHv/AK6C/wCvg/8Ar4L/AKx9/wCgbv8AjVf/AIpT/wClb/8ApGz/AKNq/wByPX0VlW22BK6C/wCtgf8ApHf/AI5a/wCNWP8Ajlr/AI5Y/wCMVf8AjFb/AJhj/wCndP8ApHD/AKVv/wClbf8AhU++FaJ65iK5lP8EroX/AKyD/wCthP8ArYL/AKp//wCqfv8ArID/AKx+/wCdbP8AcDr/AGUu/wClcP8ApnD/AJNc6BWqguUtvZv/J72d/weFWP8AYzH/AHZH/wB+Tv8AfEv/AHM//wBjK/8AVhz/AGIr/wCRX/8Ar3z/AKdx/wCaY+ccrIW0IbmW/y/AoP8qtpL/F49l/wZ2SP8AbTz/AG88/wB3RP8AiFf/AKFy/wCvgf8Ak2L/AHZB/wCjbv8RoGu9H6N9chS2kf8htJD/GJFr/yGlgv8hsY7/GLCO/wysh/8Cpn7/AJpu/wB/Tv8AVyP/ADMA/wdHE/8Vp3j/KqR1eiSZdBoPtI3vEaZ//wBOIP8ARRf/AU0e/wRQI/8DUCX/AE0h/wBIGf8BSRj/CVsr/xmDV/8osIb/HrCD8zabbx8AAAAAGqmCbAe0jv8NqoT/DZdw/wyJYf8Mg1r/DoRb/xOKZP8YmHH/IKiC/yq5lP8tvpr/HLSL/yuqfnQAAAAAAAAAAAAAAAATrYeTBLWQ/wi4lP8Oupb/ErqX/xS8l/8Yu5j/G7qW/x65k/8dto//FbGI/ySsgpkzmnABAAAAAAAAAAAAAAAAAAAAABSrhG4GsInqAbGK/wOxif8GsYr/CbCK/wuxif8MsYb/EK6D7COqfnMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAG6R9HBSrg3IOrYSxC66F4wuvheQQq4GzGKl8dCaleR4AAAAAAAAAAAAAAAAAAAAA/D8AAPAPAADAAwAAwAMAAIABAACAAQAAAAAAAAAAAAAAAAAAAAAAAIABAACAAQAAwAMAAMADAADwDwAA/D8AAA==" rel="icon" type="image/x-icon" />
+  <title>Deezer New Music Hotness</title>
+  <link href="data:image/x-icon;base64,AAABAAEAEBAAAAAAAABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAP8VAAD/GQAA/xgAAP8EDV3/AGxO/wCdAP8IkgD/GZcA/xl5MPQQBPnDFAD/xBkO/L0T088gEPrGABrxxgAWAAD/HgAA/yMAAP8iAXn/BgD//wAM8P8Abkb/C5gA/yOXAP8keDHzFgP5wxwA/8QjDPy9HM/PIhj6xQAk8cYAHwAA/ycAAP8tAAD/KQLD/x8D//8pAP//Jjuc/xubAP8smAD/Lngx8x0D+cMkAP/ELgz8vSTPzyIf+sUAL/HGACgAAP8uAAD/NwAA/zECuv8pA///OAD//zVAlP8jmgD/NJgA/zd4MfMjA/nDKwD/xDcM/L0rz88iJPrFADjxxgAwAAD/KgAA/zMAAP8uArr/JQP//zMA//8wQJT/IJoA/zCYAP8yeDHzIAP5wygA/8QyDPy9J8/PIiH6xQAz8cYALAAA/4YAAP+hAAD/jgK6/3YD//+iAP//mECU/2WaAP+XmAD/oXgx82UD+cN+AP/Eogz8vXzPzyJp+sUApPHGAIoAAP+iAAD/vwAA/6wBuv+NAv//wAD//7Y+k/95mQD/tZcA/8B3L/N5AfnDlwD/xMAL/L2Wz88if/rFAMLxxgCmAAD/hQAA/54AAP+NALr/ewX//6sF//+iRJn/aJ8H/5WcB/+efDf0Ywj5xH0B/8SeCfy8fM7NG2j6xACg8cYAiQcH/6UyMf/EUlD/t1bO/2Bs//9scv//aJjA/2PPev/AzX3/x7WT+IB2+96ebP/ex2T91Z3b3V2D+s4kxfHFAamKiv+5p6f/16uo/86Zpv8ejOf/AKbb/wDVlP892aL/ydug/8rDr/mEnvzoraf/69ek/uas5e6sif/qn8z4436wpaX/Xqen/2ykpP9ompb/E6Sf/wDTn/8A2aD/Qd6w/8bgr//JzrP7gKD76Vei/+tsof7lVuzurob/7rHL++6yrpqa/wCenv8AnJz/AI+T/wC3n/8A4a7/AOC2/0DoyP/D6Mr/xeW4/3vFyPgAn/voANr1wwD+8Lt+/fPMv/zyxKObm/8An5//AJuc/wCjnf8A3bf/AOK4/wDkwP837dX/qu7X/6vnxf9q3rD/AOfh0AD/8a0A/PLClfz00eL988nBm5v/AJ+f/wCYm/8AvKn/AOe//wDguv8A5ML/AO7Z/wDv2/8A58f/AOC2/gD45c8A/PS+APz10nn9+OOy/ffbm////wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A//8AAP//AAD//wAA//8AAP//AAASbAAAAkQAABJsAAAeAAAAHgAAAP44AAD+fAAA/ngAAP/8AAD//wAA//8AAA==" rel="icon" type="image/x-icon" />
 </head>
 
 <body>
- 
-  <header class="p-4 mb-5 d-flex bg-dark text-light">
-    <img src="master/assets/Spotify-logo.png" style="height: 120px;">
+  <header class="p-4 mb-5 d-flex header-dark text-light border-bottom border-light border-thick align-items">
+    <img src="./master/assets/download111.jpg" style="height: 120px;" class="m-3">
     <div class="d-flex flex-column">
-      <h1 class>New Music Generator</h1>
-      <h4>Using the Spotify API, we can give you new music recommendations!</h4>
+      <h1 class>Deezer New Rank Generator</h1>
+      <h4>Using the Deezer API, we can give you new music recommendations!</h4>
     </div>
-
   </header>
 
 
@@ -31,38 +28,40 @@
     <div class="border"></div>
     <div class="main-element">
 
-      <h1 class="text-light text-left p-2">New Music Generator</h1>      
-      <div class="row align-items pl-4 col-12">
-      <input class="col-md-8" placeholder="Search for Music">
+      <h1 class="text-light text-left p-2">Music</h1>      
+      <div class="justify-content-center row align-items pl-4 col-12">
+      <input class="textboxId col-md-12" type = "text" id = "input" onkeydown = "keydownFunction()" placeholder="Search for Music">
       </div>  
 
       <div class="row align-items p-2">
 
         <div class="col-12 col-md-3 col-xl-3">
-          <div id="new-music" class="my-2">
-            <button id = "get-new-music-btn" type="button" class="btn btn-success btn-hover btn-lg btn-block">Get New Music</button>
+          <div id="top-tracks" class="my-2">
+            <button id = "top-tracks-btn" type="button" class="btn btn-warning btn-hover btn-lg btn-block text-light">Top Tracks</button>
           </div>
-          <div id="date-range" class="my-2">
-            <button id = "date-range-btn" type="button" class="btn btn-success btn-hover btn-lg btn-block">Date Range</button>
+          <div id="top-albums" class="my-2">
+            <button id = "top-albums-btn" type="button" class="btn btn-success btn-hover btn-lg btn-block">Top Albums</button>
           </div>
-          <div id="music-genre" class="my-2">
-            <button id = "music-genre-btn" type="button" class="btn btn-success btn-hover btn-lg btn-block">Music Genre</button>
+          <div id="top-playlists" class="my-2">
+            <button id = "top-playlist-btn" type="button" class="btn btn-primary btn-hover btn-lg btn-block">Top Playlists</button>
           </div>
         </div>
 
 
 
         <div class="col-12 col-md-9 col-xl-9">
-          <h2 class="subtitle text-light">Showing Music: <span id="music-search-term"></span></h2>
+          <h2 class="subtitle text-light"> Show me the music! <span id="music-search-term"></span></h2>
           <div id="music-container" class="list-group"></div>
         </div>
 
-      </div>
+      
 
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
 </body>
+
+
 
 </html>
