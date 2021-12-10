@@ -37,9 +37,31 @@ dateRangeButtonEl.on('click', function() {
 //  });
 
 
+const settings = {
+	"async": true,
+	"crossDomain": true,
+	"url": "https://deezerdevs-deezer.p.rapidapi.com/search?q=beck",
+	"method": "GET",
+	"headers": {
+		"x-rapidapi-host": "deezerdevs-deezer.p.rapidapi.com",
+		"x-rapidapi-key": "7c3f0df3eamsha4eee5ccdea5495p147d72jsn739a600c7550"
+	}
+};
 
-//https://api.spotify.com/v1/browse/new-releases
+$.ajax(settings).done(function (response) {
 
 
 
-console.log()
+    for (var i = 0; i < 20; i++) {
+     var createItem = document.createElement("li");
+     var list = document.getElementById("music-container")
+
+     createItem.innerHTML=response.data[i].title
+
+     list.appendChild(createItem);
+    }
+
+
+});
+
+
