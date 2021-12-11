@@ -11,8 +11,6 @@ var inputEl = document.getElementById("input");
 var pEl = document.getElementById("searchbartext");
 var elements = [pEl];
 
-
-
 // var keyDownContainerEl = $('.container');
 
 topTracksButtonEl.on('click', function() {
@@ -57,16 +55,15 @@ topTracksButtonEl.on('click', function() {
     });
 });
 
-topAlbumsButtonEl.on('click', function() {
-    console.log('I was clicked to generate a range of dates...');
-    containerEl.append(containerhEl);
-});
+// topAlbumsButtonEl.on('click', function() {
+//     console.log('I was clicked to generate a range of dates...');
+//     containerEl.append(containerhEl);
+// });
 
-topPlaylistsButtonEl.on('click', function() {
-    console.log('I was clicked to generate music genres...');
-    location.reload();
- });
-
+// topPlaylistsButtonEl.on('click', function() {
+//     console.log('I was clicked to generate music genres...');
+//     location.reload();
+//  });
 
 // function keydownFunction() {
 //     console.log('Key is being pressed...');
@@ -80,8 +77,8 @@ topPlaylistsButtonEl.on('click', function() {
 //     pEl.innerHTML = "<font class=\"subtitle text-light\">You typed: " + text + " </font>"    
 // });
 
-inputEl.onkeydown = function (event) {
-    pEl.innerHTML = inputEl.value;
+inputEl.onkeydown = function () {
+    pEl.innerHTML = "<font> " + inputVal + " </font>"
 }
 
 // inputEl.addEventListener('keydown', function(event) {
