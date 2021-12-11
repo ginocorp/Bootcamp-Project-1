@@ -9,7 +9,10 @@ containerhEl.style.backgroundColor = "white";
 
 // var sendMeMusicButtonEl = $('#send-me-music-btn');
 
-// var inputEl = $('#input');
+var inputEl = document.getElementById("input"); 
+var pEl = document.getElementById("searchbartext");
+var text = inputEl.value; 
+
 // var keyDownContainerEl = $('.container');
 
 topTracksButtonEl.on('click', function() {
@@ -28,11 +31,17 @@ topPlaylistsButtonEl.on('click', function() {
  });
 
 
-//  inputEl.on('keydown', function keydownFunction(typing) {
-    // console.log('A key was pressed down...');
-    // console.log(typing);
-//  });
+// function keydownFunction() {
+//     console.log('Key is being pressed...');
+//     pEl.innerHTML = "<font color=\"white\">You typed: " + text +"</font>"
+//     text.textContent = text++;
+// }
 
+inputEl.addEventListener('keydown', function keydownFunction(event) {
+    console.log('Key is being pressed...');
+    console.log(event);
+    pEl.innerHTML = "<font class=\"subtitle text-light\">You typed: " + text + " </font>"    
+});
 
 const settings = {
 	"async": true,
