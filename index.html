@@ -15,11 +15,20 @@
 </head>
 
 <body>
-  <header class="p-4 mb-5 d-flex header-dark text-light border-bottom border-light border-thick align-items">
-    <img src="./master/assets/deezer-logo.jpg" style="height: 120px;" class="m-3">
-    <div class="d-flex flex-column">
-      <h1 class>Top Song Generator</h1>
-      <h4>Using the Deezer API, we can give you new music recommendations!</h4>
+  <header class="p-4 mb-5 header-dark text-light border-bottom border-light border-thick row-align-items d-flex">
+    <div>
+      <div class="align-items">
+        <img src="./master/assets/deezer-logo.jpg"  style="height: 120px;" class="m-3"> 
+        <h1>Top Song Generator</h1> 
+      </div>
+      <div class="d-flex flex-column">
+        <div>
+        
+      </div>
+    </div>
+      <div>
+        <h4>Using the Deezer API, we can give you new music recommendations!</h4>
+      </div>
     </div>
   </header>
 
@@ -30,7 +39,7 @@
 
       <h1 class="text-light text-left p-2">Find New Music</h1>      
       <div class="justify-content-center row align-items pl-4 col-12">
-      <input class="textboxId col-md-12" type = "text" id = "input" placeholder="Enter an Artist">
+      <input class="textboxId col-md-12" type = "text" id = "input" placeholder="Enter an Artist then click the Top Tracks button">
       <p id="searchbartext"></p>
     </div>  
 
@@ -38,9 +47,9 @@
 
         <div class="col-12 col-md-3 col-xl-3">
           <div id="top-tracks" class="my-2">
-          <button id="top-tracks-btn" type="button" class="btn btn-warning btn-hover btn-lg btn-block text-light">Top Tracks</button>
+          <button id="top-tracks-btn" type="button" class="btn btn-warning btn-hover btn-lg btn-block text-light ">Top Tracks</button>
           </div>
-          <div id="top-albums" class="my-2">
+          <!-- <div id="top-albums" class="my-2">
           <button id="top-albums-btn" type="button" class="btn btn-success btn-hover btn-lg btn-block">Top Albums</button>
           </div>
           <div id="top-playlists" class="my-2">
@@ -48,12 +57,20 @@
           </div>
           <div id="send-me-music" class ="my-2">
           <button id="send-me-music-btn" type="button" class ="btn btn-danger btn-hover btn-lg btn-block">Send Me Music</button>
-          </div>
+          </div> -->
         </div>
 
-        <div class="col-12 col-md-9 col-xl-9">
-          <h2 class="subtitle text-light"> Top 20 Songs <span id="music-search-term"></span></h2>
-          <ol id="music-container" class="list-group text-light"></ol>
+        <div class="col-12 col-md-9 col-xl-9 row align-items">
+          <div class="col-md-6 col-xl-6">
+            <h2 class="subtitle text-light"> Top 20 Songs <span id="music-search-term"></span></h2>
+            <ol id="music-container" class="list-group text-light"></ol>
+          </div>
+          <div class="col-md-4 col-xl-6">
+            <h2 class="subtitle text-light"> Image: <span id="image-search"></span></h2>
+            <div id="img-container">
+              <img class="img-thumbnail" src="https://m.media-amazon.com/images/I/71nYpz++VCL._SL1400_.jpg" >
+            </div>
+          </div>          
         </div>
 
         <!-- <div class="container">

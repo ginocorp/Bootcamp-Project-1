@@ -46,6 +46,10 @@ body {
     position: relative;
     overflow: hidden;
   }
+
+  #searchbartext {
+    color: white;
+  }
   
   .header-dark {
     background-color: black;
@@ -88,6 +92,13 @@ body {
     text-align: center;
     
   } 
+
+  #top-tracks-btn {
+    
+   
+
+  
+  }
 
   /*Begin shimmer code*/
   

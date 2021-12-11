@@ -9,15 +9,14 @@ var containerEl = document.getElementById("music-container");
 var containerhEl = document.createElement("h1");
 var inputEl = document.getElementById("input"); 
 var pEl = document.getElementById("searchbartext");
+var elements = [pEl];
 
 
 
 // var keyDownContainerEl = $('.container');
 
 topTracksButtonEl.on('click', function() {
-    console.log('I was clicked to generate new music...');
-    alert('Type on the search bar to look up the latest hits on music charts!');
-
+    
     function reset() {
         while (containerEl.firstChild) {
             containerEl.removeChild(containerEl.firstChild);
@@ -81,7 +80,11 @@ topPlaylistsButtonEl.on('click', function() {
 //     pEl.innerHTML = "<font class=\"subtitle text-light\">You typed: " + text + " </font>"    
 // });
 
-inputEl.onkeydown = function () {
+inputEl.onkeydown = function (event) {
     pEl.innerHTML = inputEl.value;
 }
 
+// inputEl.addEventListener('keydown', function(event) {
+//     var key = event.key.toLowerCase();
+//     elements.forEach(display => display.textContent += key)      
+// })
