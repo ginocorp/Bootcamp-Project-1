@@ -4,25 +4,11 @@ var topPlaylistsButtonEl = $('#top-playlist-btn');
 
 var containerEl = document.getElementById("music-container");
 var containerhEl = document.createElement("h1");
-containerhEl.textContent = "1990s - 2000s"
-containerhEl.style.backgroundColor = "white";
-
-// const settings = {
-// 	"async": true,
-// 	"crossDomain": true,
-// 	"url": "https://deezerdevs-deezer.p.rapidapi.com/search?q=",
-// 	"method": "GET",
-// 	"headers": {
-// 		"x-rapidapi-host": "deezerdevs-deezer.p.rapidapi.com",
-// 		"x-rapidapi-key": "7c3f0df3eamsha4eee5ccdea5495p147d72jsn739a600c7550"
-// 	}
-// };
 
 // var sendMeMusicButtonEl = $('#send-me-music-btn');
 
 var inputEl = document.getElementById("input"); 
 var pEl = document.getElementById("searchbartext");
-// var text = inputEl.value.trim(); 
 
 
 
@@ -95,31 +81,5 @@ topPlaylistsButtonEl.on('click', function() {
 //     pEl.innerHTML = "<font class=\"subtitle text-light\">You typed: " + text + " </font>"    
 // });
 
-// const settings = {
-// 	"async": true,
-// 	"crossDomain": true,
-// 	"url": "https://deezerdevs-deezer.p.rapidapi.com/search?q=ASap ROCKY",
-// 	"method": "GET",
-// 	"headers": {
-// 		"x-rapidapi-host": "deezerdevs-deezer.p.rapidapi.com",
-// 		"x-rapidapi-key": "7c3f0df3eamsha4eee5ccdea5495p147d72jsn739a600c7550"
-// 	}
-// };
-
-// $.ajax(settings).done(function (response) {
-
-
-
-//     for (var i = 0; i < 20; i++) {
-//      var createItem = document.createElement("li");
-//      var list = document.getElementById("music-container")
-
-//      createItem.innerHTML=response.data[i].title
-
-//      list.appendChild(createItem);
-//     }
-
-
-// });
 
 
