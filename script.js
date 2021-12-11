@@ -7,10 +7,8 @@ var containerhEl = document.createElement("h1");
 containerhEl.textContent = "1990s - 2000s"
 containerhEl.style.backgroundColor = "white";
 
-var inputEl = $('#input');
-var keyDownContainerEl = $('.container');
-
-// var requestUrl = 'https://api.github.com/users/nazaokafor/repos';
+// var inputEl = $('#input');
+// var keyDownContainerEl = $('.container');
 
 getNewMusicButtonEl.on('click', function() {
     console.log('I was clicked to generate new music...');
@@ -24,10 +22,6 @@ dateRangeButtonEl.on('click', function() {
 
  musicGenreButtonEl.on('click', function() {
     console.log('I was clicked to generate music genres...');
-    // console.log(`Naza URL: ${requestUrl}`);
-    // fetch(requestUrl);
-    // console.log('I am working....');
-    // .then(() => {
     location.reload();
  });
 
