@@ -19,7 +19,7 @@ SO THAT I can create a strong password that provides greater security
 
 The following image shows the web application's appearance and functionality:
 
-![The New Music Generator application displays a search bar where I enter an artist and click a  button to generate a top 20 list of tracks and display an image search result from Google.](./master/assets/project-image.png)
+![The New Music Generator application displays a search bar where I enter an artist and click a button to generate a top 20 list of tracks and display an image search result from Google.](./master/assets/project-image.png)
 
 This layout is designed for desktop viewing, but optimized for mobile. 
 
