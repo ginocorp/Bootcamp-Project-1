@@ -21,17 +21,17 @@ SO THAT I can create a strong password that provides greater security
 
 The following image shows the web application's appearance and functionality:
 
-![The New Music Generator application displays a search bar where I enter an artist and click a  button to generate a top 20 list of tracks, albums or playlists from deezer music platform. There is another button to send my search results to my phone, using the Twilio platform.](./master/assets/deezer_music_generator_website.png)
+![The New Music Generator application displays a search bar where I enter an artist and click a  button to generate a top 20 list of tracks, albums or playlists from deezer music platform. There is another button to send my search results to my phone, using the Twilio platform.](./master/assets/project-image.png)
 
 This layout is designed for desktop viewing, but optimized for mobile. 
 
-URL: https://ginocorp.github.io/project-one-spotify-new-music-generator/
+URL: https://ginocorp.github.io/project-one-music-generator/
 
 ## References
 
-Github: https://github.com/ginocorp/project-one-spotify-new-music-generator
+Github: https://github.com/ginocorp/project-one-music-generator
 
-Github Pages domain: https://ginocorp.github.io/project-one-spotify-new-music-generator/
+Github Pages domain: https://ginocorp.github.io/project-one-music-generator/
 
 Image Source for Deezer Header Logo https://seeklogo.com/images/D/deezer-logo-21B6DE6560-seeklogo.com.png
 

@@ -1,12 +1,12 @@
+//Button Selectors
 var topTracksButtonEl = $('#top-tracks-btn');
 var topAlbumsButtonEl = $('#top-albums-btn');
 var topPlaylistsButtonEl = $('#top-playlist-btn');
-
-var containerEl = document.getElementById("music-container");
-var containerhEl = document.createElement("h1");
-
 // var sendMeMusicButtonEl = $('#send-me-music-btn');
 
+//Element Selectors
+var containerEl = document.getElementById("music-container");
+var containerhEl = document.createElement("h1");
 var inputEl = document.getElementById("input"); 
 var pEl = document.getElementById("searchbartext");
 
@@ -81,7 +81,7 @@ topPlaylistsButtonEl.on('click', function() {
 //     pEl.innerHTML = "<font class=\"subtitle text-light\">You typed: " + text + " </font>"    
 // });
 
-// inputEl.onkeydown = function () {
-//     pEl.innerHTML = "<font class=\"subtitle text-light\">You typed: " + inputEl.value + "</font>;
-// }
+inputEl.onkeydown = function () {
+    pEl.innerHTML = inputEl.value;
+}
 
