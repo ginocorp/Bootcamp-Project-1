@@ -81,5 +81,7 @@ topPlaylistsButtonEl.on('click', function() {
 //     pEl.innerHTML = "<font class=\"subtitle text-light\">You typed: " + text + " </font>"    
 // });
 
-
+// inputEl.onkeydown = function () {
+//     pEl.innerHTML = "<font class=\"subtitle text-light\">You typed: " + inputEl.value + "</font>;
+// }
 
