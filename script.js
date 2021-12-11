@@ -1,29 +1,32 @@
-var getNewMusicButtonEl = $('#top-tracks-btn');
-var dateRangeButtonEl = $('#top-albums-btn');
-var musicGenreButtonEl = $('#top-playlist-btn');
+var topTracksButtonEl = $('#top-tracks-btn');
+var topAlbumsButtonEl = $('#top-albums-btn');
+var topPlaylistsButtonEl = $('#top-playlist-btn');
 
 var containerEl = document.getElementById("music-container");
 var containerhEl = document.createElement("h1");
 containerhEl.textContent = "1990s - 2000s"
 containerhEl.style.backgroundColor = "white";
 
+// var sendMeMusicButtonEl = $('#send-me-music-btn');
+
 // var inputEl = $('#input');
 // var keyDownContainerEl = $('.container');
 
-getNewMusicButtonEl.on('click', function() {
+topTracksButtonEl.on('click', function() {
     console.log('I was clicked to generate new music...');
     alert('Type on the search bar to look up the latest hits on music charts!');
 });
 
-dateRangeButtonEl.on('click', function() {
+topAlbumsButtonEl.on('click', function() {
     console.log('I was clicked to generate a range of dates...');
     containerEl.append(containerhEl);
 });
 
- musicGenreButtonEl.on('click', function() {
+topPlaylistsButtonEl.on('click', function() {
     console.log('I was clicked to generate music genres...');
     location.reload();
  });
+
 
 //  inputEl.on('keydown', function keydownFunction(typing) {
     // console.log('A key was pressed down...');
