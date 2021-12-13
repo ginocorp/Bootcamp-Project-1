@@ -7,22 +7,19 @@ var containerhEl = document.createElement("h1");
 var inputEl = document.getElementById("input"); 
 var pEl = document.getElementById("searchbartext");
 
-//Keydown function for search bar
-inputEl.onkeydown = function keyDown() {
-    pEl.innerHTML = "<font color=\"white\">You Typed: " + inputEl.value +"</font>"
-}
-
-// Local storage for search terms
-// topTracksButtonEl.onclick = search;
-var search = localStorage.getItem("search");
+// Function to add key name in local storage
 function search() {
-        // pEl.textContent = inputEl.value;
-        localStorage.setItem("search", inputEl.value);
-        console.log(localStorage);
+        var search = localStorage.getItem("search"); 
+        console.log(search);
+        return search 
 }
 
 topTracksButtonEl.on('click', function() {
-   
+    // Saves search term data into local storage
+    localStorage.setItem("search", inputEl.value);
+    console.log(localStorage);
+    pEl.innerHTML = "<font> You Typed: " + search(); +"</font>"
+
     function reset() {
         while (containerEl.firstChild) {
             containerEl.removeChild(containerEl.firstChild);
@@ -33,7 +30,7 @@ topTracksButtonEl.on('click', function() {
 
     var inputVal = document.getElementById("input").value;
 
-    console.log(inputVal);
+    // console.log(inputVal);
 
     const settings = {
         "async": true,
