@@ -1,17 +1,16 @@
 //Button Selectors
 var topTracksButtonEl = $('#top-tracks-btn');
-var topAlbumsButtonEl = $('#top-albums-btn');
-var topPlaylistsButtonEl = $('#top-playlist-btn');
-// var sendMeMusicButtonEl = $('#send-me-music-btn');
 
 //Element Selectors
 var containerEl = document.getElementById("music-container");
 var containerhEl = document.createElement("h1");
 var inputEl = document.getElementById("input"); 
 var pEl = document.getElementById("searchbartext");
-var elements = [pEl];
 
-// var keyDownContainerEl = $('.container');
+//Keydown function for search bar
+inputEl.onkeydown = function keyDown() {
+    pEl.innerHTML = "<font color=\"white\">You Typed: " + inputEl.value +"</font>"
+}
 
 topTracksButtonEl.on('click', function() {
     
@@ -55,33 +54,6 @@ topTracksButtonEl.on('click', function() {
     });
 });
 
-// topAlbumsButtonEl.on('click', function() {
-//     console.log('I was clicked to generate a range of dates...');
-//     containerEl.append(containerhEl);
-// });
 
-// topPlaylistsButtonEl.on('click', function() {
-//     console.log('I was clicked to generate music genres...');
-//     location.reload();
-//  });
 
-// function keydownFunction() {
-//     console.log('Key is being pressed...');
-//     pEl.innerHTML = "<font color=\"white\">You typed: " + text +"</font>"
-//     text.textContent = text++;
-// }
 
-// inputEl.addEventListener('keydown', function keydownFunction(event) {
-//     // console.log('Key is being pressed...');
-//     // console.log(event);
-//     pEl.innerHTML = "<font class=\"subtitle text-light\">You typed: " + text + " </font>"    
-// });
-
-inputEl.onkeydown = function () {
-    pEl.innerHTML = "<font> " + inputVal + " </font>"
-}
-
-// inputEl.addEventListener('keydown', function(event) {
-//     var key = event.key.toLowerCase();
-//     elements.forEach(display => display.textContent += key)      
-// })
