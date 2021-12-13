@@ -12,8 +12,17 @@ inputEl.onkeydown = function keyDown() {
     pEl.innerHTML = "<font color=\"white\">You Typed: " + inputEl.value +"</font>"
 }
 
+// Local storage for search terms
+// topTracksButtonEl.onclick = search;
+var search = localStorage.getItem("search");
+function search() {
+        // pEl.textContent = inputEl.value;
+        localStorage.setItem("search", inputEl.value);
+        console.log(localStorage);
+}
+
 topTracksButtonEl.on('click', function() {
-    
+   
     function reset() {
         while (containerEl.firstChild) {
             containerEl.removeChild(containerEl.firstChild);
@@ -52,6 +61,7 @@ topTracksButtonEl.on('click', function() {
     
     
     });
+    
 });
 
 
