@@ -13,13 +13,14 @@ SO THAT I can create a strong password that provides greater security
 ```
 1. When I enter a valid music artist name in the search bar and click top tracks, it displays the top 20 tracks from that artist.
 2. When I enter a valid music artist name in the search bar and click top tracks, it displays an image.
+3. When I enter a search term, it will save to local storage and appear as a selection the next time you search.
 ```
 
 ## Mock-Up
 
 The following image shows the web application's appearance and functionality:
 
-![The New Music Generator application displays a search bar where I enter an artist and click a button to generate a top 20 list of tracks and display an image search result from Google.](./master/assets/project-image.png)
+![The New Music Generator application displays a search bar where I enter an artist and click a button to generate a top 20 list of tracks and display an image search result from Google.](./master/assets/project-image-final.png)
 
 This layout is designed for desktop viewing, but optimized for mobile. 
 
