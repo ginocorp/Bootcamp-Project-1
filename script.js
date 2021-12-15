@@ -1,23 +1,25 @@
-//Button Selectors
+//Button Selector
 var topTracksButtonEl = $('#top-tracks-btn');
+
+//Create Element
+var containerhEl = document.createElement("h1");
 
 //Element Selectors
 var containerEl = document.getElementById("music-container");
-var containerhEl = document.createElement("h1");
-var inputEl = document.getElementById("input"); 
+var inputEl = document.getElementById("input");
 var pEl = document.getElementById("searchbartext");
 
 // Function to add key name in local storage
 function search() {
-        var search = localStorage.getItem("search"); 
-        console.log(search);
-        return search 
+    var search = localStorage.getItem("search");
+    return search
 }
 
-topTracksButtonEl.on('click', function() {
+// Event Listener for the "Top Tracks" button
+topTracksButtonEl.on('click', function () {
+
     // Saves search term data into local storage
     localStorage.setItem("search", inputEl.value);
-    console.log(localStorage);
     pEl.innerHTML = "<font> You Typed: " + search(); +"</font>"
 
     function reset() {
@@ -28,10 +30,8 @@ topTracksButtonEl.on('click', function() {
 
     reset();
 
+    //Grabs top 20 tracks for artist
     var inputVal = document.getElementById("input").value;
-
-    // console.log(inputVal);
-
     const settings = {
         "async": true,
         "crossDomain": true,
@@ -45,20 +45,34 @@ topTracksButtonEl.on('click', function() {
 
     $.ajax(settings).done(function (response) {
 
-
-
         for (var i = 0; i < 20; i++) {
-         var createItem = document.createElement("li");
-         var list = document.getElementById("music-container")
-    
-         createItem.innerHTML=response.data[i].title
-    
-         list.appendChild(createItem);
+            var createItem = document.createElement("li");
+            var list = document.getElementById("music-container")
+
+            createItem.innerHTML = response.data[i].title;
+
+            list.appendChild(createItem);
         }
-    
-    
     });
-    
+
+
+    //Makes the image an image of an the artist
+    var artistImg = document.getElementById("artistImg");
+    const settingsImg = {
+        "async": true,
+        "crossDomain": true,
+        "url": `https://google-image-search1.p.rapidapi.com/?keyword=${inputVal}&max=1`,
+        "method": "GET",
+        "headers": {
+            "x-rapidapi-host": "google-image-search1.p.rapidapi.com",
+            "x-rapidapi-key": "928ef6bc15msh2c89e5b6c90b82cp103314jsn719e3b7b78f0"
+        }
+    };
+
+    $.ajax(settingsImg).done(function (response) {
+        artistImg.src = response[0].image.url;
+    });
+
 });
 
 
