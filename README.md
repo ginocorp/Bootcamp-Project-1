@@ -3,9 +3,7 @@
 ## User Story
 
 ```
-As a music lover, I want to find the top tracks, albums and playlists for my favorite artist.
-I WANT to enter my favorite artist 
-SO THAT I can create a strong password that provides greater security
+As a music lover, I want to find the top 20 tracks from an artist I search, along with an image that corresponds with that artist.
 ```
 
 ## Acceptance Criteria
@@ -32,9 +30,13 @@ Github: https://github.com/ginocorp/project-one-music-generator
 
 Github Pages domain: https://ginocorp.github.io/project-one-music-generator/
 
+Border Source the Deezer Application: https://freefrontend.com/css-border-animations/
+
 Image Source for Deezer Header Logo https://seeklogo.com/images/D/deezer-logo-21B6DE6560-seeklogo.com.png
 
-Image Source for Deezer Flavicon Logo: https://www.favicon.cc/?action=icon&file_id=514567
+Image Source for Deezer Favicon Logo: https://www.favicon.cc/?action=icon&file_id=514567
+
+Image Source for Artist Placeholder: https://www.onlinelogomaker.com/blog/wp-content/uploads/2017/06/music-logo-design.jpg 
 
 Deezer official API documentation: https://developers.deezer.com/api/search#connections
 
