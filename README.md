@@ -30,6 +30,8 @@ Github: https://github.com/ginocorp/project-one-music-generator
 
 Github Pages domain: https://ginocorp.github.io/project-one-music-generator/
 
+Google Slides Presentation: https://docs.google.com/presentation/d/1qx4oxQf3UyrmXc3fGaYDUxAopnH3qQvs24ivg7bMy_s/edit?usp=sharing
+
 Border Source the Deezer Application: https://freefrontend.com/css-border-animations/
 
 Image Source for Deezer Header Logo https://seeklogo.com/images/D/deezer-logo-21B6DE6560-seeklogo.com.png
