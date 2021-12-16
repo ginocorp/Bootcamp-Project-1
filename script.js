@@ -4,7 +4,7 @@ var topTracksButtonEl = $('#top-tracks-btn');
 //Create Element
 var containerhEl = document.createElement("h1");
 
-//Element Selectors
+//Element Selectors and event listener
 var containerEl = document.getElementById("music-container");
 var inputEl = document.getElementById("input");
 var pEl = document.getElementById("searchbartext");
@@ -56,7 +56,7 @@ topTracksButtonEl.on('click', function () {
     });
 
 
-    //Makes the image an image of an the artist
+    //Makes the image an image of an the artist, using the Google API
     var artistImg = document.getElementById("artistImg");
     const settingsImg = {
         "async": true,
@@ -68,7 +68,7 @@ topTracksButtonEl.on('click', function () {
             "x-rapidapi-key": "928ef6bc15msh2c89e5b6c90b82cp103314jsn719e3b7b78f0"
         }
     };
-
+    // This function sets the artist image as the search result
     $.ajax(settingsImg).done(function (response) {
         artistImg.src = response[0].image.url;
     });
