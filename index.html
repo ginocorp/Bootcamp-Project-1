@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- this page title contains the flavicon for deezer at the top -->
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,6 +20,7 @@
 <body>
   <header class="row-align-items p-4 mb-5 header-dark text-light border-bottom border-light border-thick">
     <div class="image-header col-12">
+      <!-- our header uses Bootstrap to properly format the icon and the title for proper formatting -->
       <div class="img-col">
         <img src="./master/assets/deezer-logo.jpg" style="height: 120px;" class="m-3">
       </div>
@@ -36,7 +38,8 @@
     <div class="main-element">
 
       <h1 id="new-music-text" class="text-light text-left p-2">Find New Music</h1>
-      <div>
+      <!-- this contains the search box -->
+      <div> 
         <form class="p-2">
           <div class="input-group">
             <input type="text" class="textboxId form-control" id="input"
@@ -52,7 +55,7 @@
         <div class="col-12">
           <p id="searchbartext" class="text-center"></p>
         </div>
-
+        <!-- This is the container for the search results and image -->
         <div class="col-md-6 col-xl-6">
           <h2 class="subtitle text-light"> Top 20 Songs <span id="music-search-term"></span></h2>
           <ol id="music-container" class="pl-4 my-4 list-group text-light"></ol>
@@ -68,6 +71,7 @@
       </div>
     </div>
   </div>
+  <!-- Javascript is placed at the bottom of body because it gives the HTML time to load before any of the Javascript loads. Prevents errors-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="script.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
